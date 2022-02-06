@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;600;700&family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+
+  --clr-pale-blue: hsl(223, 100%, 88%);
+  --clr-light-red: hsl(354, 100%, 66%);
+
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
