@@ -12,6 +12,117 @@ body {
   font-family: 'Karla', sans-serif;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  width: 85%;
+  margin-top: 4rem;
+}
+
+main .logo-ping {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+main h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: 'Libre Franklin', sans-serif;
+  color: var(--clr-gray);
+}
+
+main h1 a {
+  font-weight: 700;
+  color: black;
+}
+
+main p {
+  font-size: .8rem;
+  margin-bottom: 2rem;
+}
+
+main input[type=text] {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--clr-pale-blue);
+  border-radius: 2rem;
+  padding: .8rem;
+  padding-left: 2rem;
+  margin-bottom: .8rem;
+  font-family: 'Karla', sans-serif;
+}
+
+main input[type=text]::-webkit-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+main input[type=text]:-ms-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+main input[type=text]::-ms-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+main input[type=text]::placeholder {
+  color: var(--clr-pale-blue);
+}
+
+main input[type=text]:focus {
+  outline: none;
+  border: 2px solid var(--clr-blue);
+}
+
+main button {
+  width: 100%;
+  background-color: var(--clr-blue);
+  border: none;
+  padding: .8rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 600;
+}
+
+main .img-dashboard {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.icon-container {
+  color: var(--clr-blue);
+  margin-bottom: 1rem;
+}
+
+.icon-container i {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--clr-gray);
+  border-radius: 50%;
+  width: 38px;
+  padding: .5rem;
+  margin-right: 1rem;
+}
+
+.icon-container i:last-of-type {
+  margin-right: 0;
 }
 
 .attribution {
