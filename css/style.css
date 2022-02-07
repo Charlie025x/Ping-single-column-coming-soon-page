@@ -56,7 +56,7 @@ main p {
   margin-bottom: 2rem;
 }
 
-main input[type=text] {
+main input[type=email] {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -69,23 +69,23 @@ main input[type=text] {
   font-family: 'Karla', sans-serif;
 }
 
-main input[type=text]::-webkit-input-placeholder {
+main input[type=email]::-webkit-input-placeholder {
   color: var(--clr-pale-blue);
 }
 
-main input[type=text]:-ms-input-placeholder {
+main input[type=email]:-ms-input-placeholder {
   color: var(--clr-pale-blue);
 }
 
-main input[type=text]::-ms-input-placeholder {
+main input[type=email]::-ms-input-placeholder {
   color: var(--clr-pale-blue);
 }
 
-main input[type=text]::placeholder {
+main input[type=email]::placeholder {
   color: var(--clr-pale-blue);
 }
 
-main input[type=text]:focus {
+main input[type=email]:focus {
   outline: none;
   border: 2px solid var(--clr-blue);
 }
