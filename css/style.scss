@@ -26,6 +26,7 @@ body {
 
 main {
   width: 85%;
+  max-width: 25rem;
   margin-top: 4rem;
   .logo-ping{
     width: 3rem;
@@ -76,13 +77,13 @@ main {
   }
   .img-dashboard {
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 }
 
 .icon-container {
   color: var(--clr-blue);
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   i {
     box-sizing: border-box;
     border: 1px solid var(--clr-gray);
@@ -94,6 +95,11 @@ main {
       margin-right: 0;
     }
   }
+}
+
+.footer {
+  color: var(--clr-gray);
+  font-size: .8rem;
 }
 
 .attribution {
