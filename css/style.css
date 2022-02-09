@@ -139,4 +139,18 @@ main .img-dashboard {
 .attribution a {
   color: #3e52a3;
 }
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: 35rem;
+    max-width: none;
+  }
+  main input[type=email] {
+    display: inline-block;
+    width: 65%;
+  }
+  main button {
+    width: 33%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
