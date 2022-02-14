@@ -28,6 +28,21 @@ main {
   width: 85%;
   max-width: 25rem;
   margin-top: 4rem;
+  /* error message starts*/
+  #form { 
+    position: relative;
+    #err {
+      white-space: nowrap;
+      position: absolute;
+      top: 33%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+    }
+    .btnDown{
+      margin-top: 1.5rem;
+    }
+    /* error message code ends */
+  }
   .logo-ping{
     width: 3rem;
     margin-bottom: 1rem;
@@ -54,16 +69,22 @@ main {
     border-radius: 2rem;
     padding: .8rem;
     padding-left: 2rem;
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
     font-family: 'Karla', sans-serif;
     &::placeholder {
       color: var(--clr-pale-blue);
+      font-size: 1rem;
     }
     &:focus {
       outline: none;
       border: 2px solid var(--clr-blue);
       // outline: none;
     }
+  }
+  #err {
+    color: var(--clr-light-red);
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
   }
   button {
     width: 100%;
@@ -74,6 +95,7 @@ main {
     margin-bottom: 3rem;
     color: white;
     font-weight: 600;
+    font-size: 1rem;
   }
   .img-dashboard {
     width: 100%;
@@ -120,6 +142,13 @@ main {
     }
     button {
       width: 33%;
+    }
+    #form {
+      #err {
+        top: 70%;
+        left: 25%;
+      }
+      // remove .btnDown via Js
     }
   }
 }

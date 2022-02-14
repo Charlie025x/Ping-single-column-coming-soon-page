@@ -33,6 +33,25 @@ main {
   width: 85%;
   max-width: 25rem;
   margin-top: 4rem;
+  /* error message starts*/
+}
+
+main #form {
+  position: relative;
+  /* error message code ends */
+}
+
+main #form #err {
+  white-space: nowrap;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #form .btnDown {
+  margin-top: 1.5rem;
 }
 
 main .logo-ping {
@@ -66,29 +85,39 @@ main input[type=email] {
   border-radius: 2rem;
   padding: .8rem;
   padding-left: 2rem;
-  margin-bottom: .8rem;
+  margin-bottom: 1rem;
   font-family: 'Karla', sans-serif;
 }
 
 main input[type=email]::-webkit-input-placeholder {
   color: var(--clr-pale-blue);
+  font-size: 1rem;
 }
 
 main input[type=email]:-ms-input-placeholder {
   color: var(--clr-pale-blue);
+  font-size: 1rem;
 }
 
 main input[type=email]::-ms-input-placeholder {
   color: var(--clr-pale-blue);
+  font-size: 1rem;
 }
 
 main input[type=email]::placeholder {
   color: var(--clr-pale-blue);
+  font-size: 1rem;
 }
 
 main input[type=email]:focus {
   outline: none;
   border: 2px solid var(--clr-blue);
+}
+
+main #err {
+  color: var(--clr-light-red);
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
 }
 
 main button {
@@ -100,6 +129,7 @@ main button {
   margin-bottom: 3rem;
   color: white;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 main .img-dashboard {
@@ -151,6 +181,10 @@ main .img-dashboard {
   }
   main button {
     width: 33%;
+  }
+  main #form #err {
+    top: 70%;
+    left: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

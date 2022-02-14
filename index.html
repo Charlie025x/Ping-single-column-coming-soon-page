@@ -13,13 +13,14 @@
 </head>
 <body>
   <main>
+    <img class="logo-ping" src="./images/logo.svg" alt="PING">
+    <h1>We are launching <a>soon!</a></h1>
+    <p>Subscribe and get notified</p>
     <form id="form" action="/" method="#">
-      <img class="logo-ping" src="./images/logo.svg" alt="PING">
-      <h1>We are launching <a>soon!</a></h1>
-      <p>Subscribe and get notified</p>
       <input type="email" name="email" id="email" type="text" placeholder="Your email address..." required>
-      <!-- <div id="error"></div> -->
-      <button type="submit">Notify Me</button>
+      <!-- <div id="error-message"  style="display:none"></div> -->
+      <div id="err">Please provide a valid email address</div>
+      <button type="submit" id="btn-submit" class="btnDown">Notify Me</button>
     </form>
     <img class="img-dashboard" src="./images/illustration-dashboard.png" alt="dashboard">
   </main>
