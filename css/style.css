@@ -41,7 +41,8 @@ main #form {
   /* error message code ends */
 }
 
-main #form #err {
+main #form #error-message {
+  display: none;
   white-space: nowrap;
   position: absolute;
   top: 33%;
@@ -50,7 +51,7 @@ main #form #err {
           transform: translate(-50%, -50%);
 }
 
-main #form .btnDown {
+main #form .btn-down {
   margin-top: 1.5rem;
 }
 
@@ -76,7 +77,7 @@ main p {
   margin-bottom: 2rem;
 }
 
-main input[type=email] {
+main input[type=text] {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -89,32 +90,32 @@ main input[type=email] {
   font-family: 'Karla', sans-serif;
 }
 
-main input[type=email]::-webkit-input-placeholder {
+main input[type=text]::-webkit-input-placeholder {
   color: var(--clr-pale-blue);
   font-size: 1rem;
 }
 
-main input[type=email]:-ms-input-placeholder {
+main input[type=text]:-ms-input-placeholder {
   color: var(--clr-pale-blue);
   font-size: 1rem;
 }
 
-main input[type=email]::-ms-input-placeholder {
+main input[type=text]::-ms-input-placeholder {
   color: var(--clr-pale-blue);
   font-size: 1rem;
 }
 
-main input[type=email]::placeholder {
+main input[type=text]::placeholder {
   color: var(--clr-pale-blue);
   font-size: 1rem;
 }
 
-main input[type=email]:focus {
+main input[type=text]:focus {
   outline: none;
   border: 2px solid var(--clr-blue);
 }
 
-main #err {
+main #error-message {
   color: var(--clr-light-red);
   font-size: .8rem;
   margin-bottom: 1.5rem;
@@ -175,14 +176,14 @@ main .img-dashboard {
     width: 35rem;
     max-width: none;
   }
-  main input[type=email] {
+  main input[type=text] {
     display: inline-block;
     width: 65%;
   }
   main button {
     width: 33%;
   }
-  main #form #err {
+  main #form #error-message {
     top: 70%;
     left: 25%;
   }

@@ -31,14 +31,15 @@ main {
   /* error message starts*/
   #form { 
     position: relative;
-    #err {
+    #error-message {
+      display: none; //toggle this with javascript
       white-space: nowrap;
       position: absolute;
       top: 33%;
       left: 50%;
       transform: translate( -50%, -50% );
     }
-    .btnDown{
+    .btn-down{
       margin-top: 1.5rem;
     }
     /* error message code ends */
@@ -61,7 +62,7 @@ main {
     font-size: .8rem;
     margin-bottom: 2rem;
   }
-  input[type=email] {
+  input[type=text] {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -81,7 +82,7 @@ main {
       // outline: none;
     }
   }
-  #err {
+  #error-message {
     color: var(--clr-light-red);
     font-size: .8rem;
     margin-bottom: 1.5rem;
@@ -136,7 +137,7 @@ main {
   main {
     width: 35rem;
     max-width: none;
-    input[type=email] {
+    input[type=text] {
       display: inline-block;
       width: 65%;
     }
@@ -144,7 +145,7 @@ main {
       width: 33%;
     }
     #form {
-      #err {
+      #error-message {
         top: 70%;
         left: 25%;
       }

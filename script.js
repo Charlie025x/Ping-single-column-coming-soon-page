@@ -1,28 +1,32 @@
-const email = document.getElementById('email')
+var emailElement = document.getElementById('email')
 const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
+const errorMessageElement = document.getElementById('error-message')
+const btnSubmit = document.getElementById('btn-submit')
 const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-// const validation = () => {
-//   if (email.matches(pattern))
-//   {
-//     form.classList.add("valid")
-//     form.classList.remove("invalid")
-//   }
-//   else{
-//     form.classList.remove("valid")
-//     form.classList.add("invalid")
-//   }
-// }
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-// form.addEventListener('submit', (e) => {
-//   let messages = []
-//   if (email.value === '' || email.value == null){
-//     messages.push('Email is required')
-//   }
+    // isEmailValid = false;
 
-//   if (messages.length > 0) {
-//     e.preventDefault()
-//     errorElement.innerText = messages.join(', ')
-//   }
-// })
+    if (emailElement.value.match(pattern)) {
+        // success code
+
+        errorMessageElement.style.display = "none"
+        console.log("match")
+        console.log(emailElement.value)
+        // remove .btndown
+    } else {
+        // error code
+        errorMessageElement.style.display = "block"
+        console.log("dont match")
+        console.log(emailElement.value)
+        // add .btndown
+    }
+    
+    // if (!isEmailValid) {
+    //     errorMessageElement.style.display = "block"
+    // }
+
+    
+})
