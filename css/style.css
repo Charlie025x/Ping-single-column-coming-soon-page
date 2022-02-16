@@ -33,12 +33,12 @@ main {
   width: 85%;
   max-width: 25rem;
   margin-top: 4rem;
-  /* error message starts*/
+  /********************** error message code starts **************************/
+  /******************* error message code ends ***********************/
 }
 
 main #form {
   position: relative;
-  /* error message code ends */
 }
 
 main #form #error-message {
@@ -53,6 +53,10 @@ main #form #error-message {
 
 main #form .btn-down {
   margin-top: 1.5rem;
+}
+
+main #form .input-error {
+  border: 1px solid var(--clr-light-red);
 }
 
 main .logo-ping {
@@ -87,6 +91,7 @@ main input[type=text] {
   padding: .8rem;
   padding-left: 2rem;
   margin-bottom: 1rem;
+  font-size: .8rem;
   font-family: 'Karla', sans-serif;
 }
 
@@ -122,6 +127,7 @@ main #error-message {
 }
 
 main button {
+  cursor: pointer;
   width: 100%;
   background-color: var(--clr-blue);
   border: none;
@@ -131,6 +137,12 @@ main button {
   color: white;
   font-weight: 600;
   font-size: 1rem;
+  -webkit-filter: drop-shadow(0px 5px 10px #2a47a873);
+          filter: drop-shadow(0px 5px 10px #2a47a873);
+}
+
+main button:hover {
+  opacity: .8;
 }
 
 main .img-dashboard {
@@ -186,6 +198,9 @@ main .img-dashboard {
   main #form #error-message {
     top: 70%;
     left: 25%;
+  }
+  main #form .btn-down {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

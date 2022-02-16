@@ -28,7 +28,7 @@ main {
   width: 85%;
   max-width: 25rem;
   margin-top: 4rem;
-  /* error message starts*/
+  /********************** error message code starts **************************/
   #form { 
     position: relative;
     #error-message {
@@ -39,11 +39,14 @@ main {
       left: 50%;
       transform: translate( -50%, -50% );
     }
-    .btn-down{
+    .btn-down {
       margin-top: 1.5rem;
     }
-    /* error message code ends */
+    .input-error {
+      border: 1px solid var(--clr-light-red);
+    }
   }
+  /******************* error message code ends ***********************/
   .logo-ping{
     width: 3rem;
     margin-bottom: 1rem;
@@ -71,6 +74,7 @@ main {
     padding: .8rem;
     padding-left: 2rem;
     margin-bottom: 1rem;
+    font-size: .8rem;
     font-family: 'Karla', sans-serif;
     &::placeholder {
       color: var(--clr-pale-blue);
@@ -88,6 +92,7 @@ main {
     margin-bottom: 1.5rem;
   }
   button {
+    cursor: pointer;
     width: 100%;
     background-color: var(--clr-blue);
     border: none;
@@ -97,6 +102,10 @@ main {
     color: white;
     font-weight: 600;
     font-size: 1rem;
+    filter: drop-shadow(0px 5px 10px #2a47a873);
+    &:hover {
+      opacity: .8;
+    }
   }
   .img-dashboard {
     width: 100%;
@@ -149,7 +158,9 @@ main {
         top: 70%;
         left: 25%;
       }
-      // remove .btnDown via Js
+    .btn-down {
+      margin-top: 0;
+    }
     }
   }
 }

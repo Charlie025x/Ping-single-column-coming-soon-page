@@ -7,26 +7,29 @@ const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    // isEmailValid = false;
+        errorMessageElement.style.display = "block"
+        btnSubmit.classList.add("btn-down")
 
     if (emailElement.value.match(pattern)) {
         // success code
 
-        errorMessageElement.style.display = "none"
-        console.log("match")
-        console.log(emailElement.value)
-        // remove .btndown
+        // console.log("email value is: " + emailElement.value)
+        // console.log("email matches pattern")
+        emailElement.classList.remove("input-error")
+        errorMessageElement.innerHTML = "success"
+        errorMessageElement.style.color = "green";
+    } else if (emailElement.value === "") {
+        // empty email code
+        errorMessageElement.innerHTML = "please enter your email"
+        errorMessageElement.style.color = "var(--clr-light-red)";
+        emailElement.classList.add("input-error")
     } else {
         // error code
-        errorMessageElement.style.display = "block"
-        console.log("dont match")
-        console.log(emailElement.value)
-        // add .btndown
-    }
-    
-    // if (!isEmailValid) {
-    //     errorMessageElement.style.display = "block"
-    // }
 
-    
+        // console.log("email value is: " + emailElement.value)
+        // console.log("email doesn't match pattern")
+        errorMessageElement.innerHTML = "Please provide a valid email address"
+        errorMessageElement.style.color = "var(--clr-light-red)";
+        emailElement.classList.add("input-error")
+    }
 })
